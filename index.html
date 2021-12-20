@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marvel comics project</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <script src="comics.js"></script>
+</head>
+<body>
+    <a-scene id="main_scene">
+
+    <a-sky id="sky" color="#98DAFC"></a-sky>
+
+    <a-entity id="comics_container" tour cursor_events></a-entity>
+
+    <a-camera id="camera" wasd-controls="enabled: true" position="0 0 0">
+
+    <a-entity id="title" position="0 0.73 -1" text="font: exo2bold; align: center; width: 2.5; color: black; value: The Spiderman Movies">
+        <a-entity id="subtitle" position="0 -0.1 0" text="font: exo2bold; align: center; width: 1; color: white; value: With Great Power, Comes Great Responsibility."></a-entity>
+    </a-entity>
+    
+    <a-entity id="camera_cursor" cursor position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: #FFFFFF; shader: flat;"></a-entity>
+    </a-camera>
+    </a-scene>
+     
+</body>
+</html>
